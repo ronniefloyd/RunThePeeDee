@@ -1,0 +1,28 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RunThePeeDee.View.MainPage">
+
+    <Grid>
+        <Image Source="background.png" Aspect="AspectFill" />
+
+        <!-- StackLayout to stack elements vertically -->
+        <StackLayout VerticalOptions="StartAndExpand" Padding="30" Margin="0,90,0,0">
+            <Frame Padding="5">
+                <!-- Username entry -->
+                <Entry Placeholder="Username" TextColor="White"  />
+            </Frame>
+            <Frame Padding="5">
+                <!-- Password entry -->
+                <Entry Placeholder="Password" IsPassword="True" TextColor="White"/>
+            </Frame>
+            <!-- StackLayout for the two buttons -->
+            <Frame Padding="5">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                    <Button Text="Login" BorderWidth="1"/>
+                    <Button Text="Forgot password" BorderWidth="1" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>
